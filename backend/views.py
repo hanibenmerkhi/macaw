@@ -3,7 +3,7 @@ from .models import produit,demande
 # Create your views here.
 def produits (request):
     
-    return render(request,'produits.html',{'pro':produit.objects.filter(active=True,pack=False)})
+    return render(request,'index.html',{'pro':produit.objects.filter(active=True,pack=False)})
 
 def promotions (request):
     return render(request,'promotions.html',{'promo':produit.objects.filter(active=True,promo=True)})
