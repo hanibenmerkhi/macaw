@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>MacawSHOP</title>
+<link rel="stylesheet" href="static/css/style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+
+
+<div style='    top:0;left:0;width:100%;z-index:123;padding-bottom:120px;background: -moz-linear-gradient(top,  #07a1e3 0%, #ffffff 100%);
+background: -webkit-linear-gradient(top,  #07a1e3 0%,#ffffff 100%); 
+background: linear-gradient(to bottom,  #07a1e3 0%,#ffffff 100%);'>
+
+</div>
+
+<div class="card mb-3" style="width: 90%;margin-left:40px">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="{{det.image.url}}" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h4 class="card-title"><B>{{det.nom}} </B></h4>
+          <p class="card-text" style='padding-left:40px;padding-bottom:50px'>{{det.desc}}</p>
+
+        </div>
+      </div>
+      {% if det.a_prix != 0 %}<h5 class="card-text" style="color:red;font-family: 'Trebuchet MS', sans-serif;display:inline-block ;text-align: center;margin:auto"><strike>{{det.a_prix}} DA</strike></h5> {% endif %} 
+      <h5 class="card-text" style="font-family: 'Trebuchet MS', sans-serif;display:inline-block;text-align: center;margin:auto">{{det.prix}} DA</h5>
+      <a href="{% url 'form' det.id %}" class="btn btn-warning"style="width: 300px;margin:auto">Acheter maintenant <i class="bi bi-cart3"></i></a>
+    </div>
+  </div>
+</body>
+</html>

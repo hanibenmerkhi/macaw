@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>MacawSHOP</title>
+<link rel="stylesheet" href="static/css/style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+	
+	
+<div class='all'>
+	<div id="mainNavigation">
+		<nav role="navigation">
+		  <div class="py-3 text-center border-bottom">
+			<img src="static/image/macaw.png" style=' width: 10%;height:10%' alt="" class="invert">
+			<div class="container">
+				<div class="row">
+				  <div class="col-md-12 text-center">
+					<h1 class="animate-charcter"> Macaw shop </h1>
+				  </div>
+				</div>
+			  </div>
+			
+		  </div>
+		  <div></div>
+		</nav>
+		<div class="navbar-expand-md">
+		 
+		  <div class="text-center mt-3 collapse navbar-collapse" id="navbarNavDropdown">
+			<ul class="navbar-nav mx-auto ">
+			  <li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="{% url 'produit' %}">Produits</a>
+			  </li>
+			  
+			  <li class="nav-item">
+				<a class="nav-link" href="{% url 'pack' %}">Packs</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="{% url 'pro' %}">Promotions</a>
+			  </li>
+			  
+			  
+			</ul>
+		  </div>
+		</div>
+	
+	  </div>
+	  <div class='div'>
+		{% block b %}{% endblock b %}
+	</div>
+</div>
+
+
+
+
+<footer class="footer-distributed" >
+
+    <div class="footer-left" >
+<br>
+<br>
+
+        <h3>Macaw<span>Shop</span><p style='display:inline-block'> ©2023</p></h3>
+        <a href="https://www.facebook.com/people/Macaw-Shop/100095703155783/" ><img  src='static/image/facebook.png'style='height:5%;width:5%'><h5  style='display:inline-block; padding-left:15px'>Facebook</h5> </a>
+		<br><br>
+		<a href="https://www.instagram.com/macawshop25/" ><img src='static/image/instagram.png'style='height:5%;width:5%'><h5  style='display:inline-block; padding-left:15px'>Instagram</h5> </a>
+		<br><br>
+	
+
+        
+      </div>
+
+      <div class="footer-center">
+		<br>
+		<br>
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p>Constantine</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>06.75.76.62.78</p>
+        </div>
+
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a>macawshop25@gmail.com</a></p>
+        </div>
+		
+      </div>
+
+      <div class="footer-right">
+		<br>
+		<br>
+		
+        <p class="footer-company-about">
+          <span>Macaw Shop</span>
+          Macaw Shop est une boutique électronique spécialisée dans la vente de produits cosmétiques thermales, de beauté et de soins. Grâce à sa vaste gamme de produits haut de gamme, cette boutique en ligne offre aux clients une expérience d'achat unique et enrichissante.
+		  
+        </p>
+
+        
+
+      </div>
+
+    </footer>
+</body>
+</html>
